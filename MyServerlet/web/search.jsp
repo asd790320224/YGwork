@@ -155,7 +155,7 @@
             out.println("      </td>");
             out.println("    </tr>");
             out.println("  </table>");
-            out.println("  <form method='post' action='/AddToCart'>");
+            out.println("  <form method='post' action='AddToCart'>");
             out.println("    <input type='hidden' name='productId' value='" + id + "'>");
             if(role != null && role.equals("顾客"))
                 out.println("    <input type='submit' value='添加至购物车'>");
