@@ -199,27 +199,27 @@
 </script>
 
 
-<form name="editForm" action="updateProduct.jsp" method="post" enctype="multipart/form-data" acceptcharset="UTF-8">
+<form name="editForm" action="updateProduct.jsp" method="post" enctype="multipart/form-data" acceptcharset="UTF-8" onsubmit="return input_check()">
     <table align="center">
         <tr>
             <td>商品名称: </td>
-            <td><input type="text" id="name" name="name" value="<%= o_name %>" onsubmit="return input_check()"/></td>
+            <td><input type="text" id="name" name="name" value="<%= o_name %>"/></td>
         </tr>
         <tr>
             <td>商品描述：</td>
-            <td><input type="text" name="description" value="<%= o_description %>" onsubmit="return input_check()"/></td>
+            <td><input type="text" name="description" value="<%= o_description %>"/></td>
         </tr>
         <tr>
             <td>商品价格￥: </td>
-            <td><input type="text" name="price" value="<%= o_price %>" onsubmit="return input_check()"/></td>
+            <td><input type="text" name="price" value="<%= o_price %>"/></td>
         </tr>
         <tr>
             <td>库存数量: </td>
-            <td><input type="text" name="stock" value="<%= o_stock %>" onsubmit="return input_check()"/></td>
+            <td><input type="text" name="stock" value="<%= o_stock %>"/></td>
         </tr>
         <tr>
             <td>联系电话: </td>
-            <td><input type="tel" name="phone" value="<%= o_phone %>" onsubmit="return input_check()" /></td>
+            <td><input type="tel" name="phone" value="<%= o_phone %>"/></td>
         </tr>
         <tr>
             <td>缩略图: </td>
@@ -229,7 +229,7 @@
         <tr>
             <td>
                 <input type="hidden" name="pid" value="<%= pid %>">
-                <input type="submit" value="修改商品" onsubmit="return input_check()">
+                <input type="submit" value="修改商品">
             </td>
         </tr>
     </table>
