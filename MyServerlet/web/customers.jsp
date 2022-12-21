@@ -110,7 +110,7 @@
       }
       else {
         PreparedStatement delete = conn.prepareStatement(
-                "DELETE * FROM 购物车 WHERE 商品id = ?");
+                "DELETE FROM 购物车 WHERE 商品id = ?");
         delete.setInt(1, pid);
         delete.executeUpdate();
       }
